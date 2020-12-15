@@ -40,28 +40,15 @@ li:before {
   position: absolute;
 }
 
-li::after {
-  content: " ";
-  display: block;
-  clear: both;
+.startButton {
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
-li button {
-  float: right;
-  border: none;
-  height: 40px;
-  cursor: pointer;
-  background-color: #ff9500;
-  color: white;
-  font-size: 1em;
-}
 
-li button:hover {
-  background-color: #febc5d;
-}
-
-.quiz {
-  width: 800px;
+.button1 .button2 .button3 .button4 {
+  width: 200px;
   margin: 0 auto;
   margin-top: 40px;
 }
