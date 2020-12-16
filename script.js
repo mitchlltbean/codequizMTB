@@ -85,7 +85,7 @@
 
 
         console.log(firstAns);
-        Timer()
+        
     
    })
 
