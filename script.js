@@ -24,9 +24,9 @@
     var secondAns = document.querySelector(".listTwo")
     var thirdAns = document.querySelector(".listThree")
     var fourthAns = document.querySelector(".listFour")
-    //var LiEl = document.querySelector(".listOne" , ".listTwo" ,".listThree" , ".listFour")
+    var liElclear = document.querySelector("li")
     //var yesno = document.querySelector("#yn")
-
+    var displaytime = document.querySelector("#timeLoc")
 
     var buttonGone = document.querySelector("#startButton")
     var ptext = document.querySelector("#pStart")
@@ -44,20 +44,24 @@
         secondAns.append(answersCat[1]);
         thirdAns.append(answersCat[2]);
         fourthAns.append(answersCat[3]);
-    
-        secondAns.addEventListener("click", function(event) {
-            event.preventDefault();
 
-        firstAns.value.trim();
-        secondAns.trim();
-        thirdAns.trim();              
-        fourthAns.trim();
+        (firstAns || secondAns || thirdAns || fourthAns).addEventListener("click", function(q2) {
+            q2.preventDefault();
+
+        question.innerHTML = "";    
+        firstAns.innerHTML = "";
+        secondAns.innerHTML = "";
+        thirdAns.innerHTML = "";             
+        fourthAns.innerHTML = "";
 
         question.append(questionTwo);
         firstAns.append(answersFly[0]);
         secondAns.append(answersFly[1]);
         thirdAns.append(answersFly[2]);
         fourthAns.append(answersFly[3]);
+    })
+       
+
         
 
 
@@ -75,7 +79,7 @@
     
     
     
-    })
+ 
 
     
         
