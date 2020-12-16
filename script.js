@@ -13,14 +13,19 @@
     // Q"how many legs does a fly have?
     // A"2,4,8,6"
 
-    var questionOne = "how many legs does a cat have?"
-   // var answersCat = ["one" , 9"two", "four" , "three"]
-    //var question = doument.querySelector(".ulist")
+    var questionOne = ("how many legs does a cat have?")
+    var answersCat = ["one" , "two", "four" , "three"]
+
+    var questionTwo = ("how many legs does a fly have?")
+    var answersFly = ["one" , "three" , "six" , "five"]
+
+    var question = document.querySelector("#questionHolder")
     var firstAns = document.querySelector(".listOne")
     var secondAns = document.querySelector(".listTwo")
     var thirdAns = document.querySelector(".listThree")
     var fourthAns = document.querySelector(".listFour")
-
+    //var LiEl = document.querySelector(".listOne" , ".listTwo" ,".listThree" , ".listFour")
+    //var yesno = document.querySelector("#yn")
 
 
     var buttonGone = document.querySelector("#startButton")
@@ -34,14 +39,46 @@
         buttonGone.style.display = 'none';
         ptext.style.display = 'none';
 
-        question.display=questionOne
+        question.append(questionOne);
+        firstAns.append(answersCat[0]);
+        secondAns.append(answersCat[1]);
+        thirdAns.append(answersCat[2]);
+        fourthAns.append(answersCat[3]);
+    
+        secondAns.addEventListener("click", function(event) {
+            event.preventDefault();
+
+        firstAns.value.trim();
+        secondAns.trim();
+        thirdAns.trim();              
+        fourthAns.trim();
+
+        question.append(questionTwo);
+        firstAns.append(answersFly[0]);
+        secondAns.append(answersFly[1]);
+        thirdAns.append(answersFly[2]);
+        fourthAns.append(answersFly[3]);
         
 
 
-        console.log(buttonGone)
-    
+
+        
+        
+
+
+        console.log(firstAns);
+        
     
    })
+    
+    
+    
+    
+    
+    })
+
+    
+        
 
   //Do code for showing the number of seconds here
 
