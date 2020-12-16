@@ -22,7 +22,7 @@
     console.log(button)
     
     
-   }
+   })
 
   //Do code for showing the number of seconds here
 
