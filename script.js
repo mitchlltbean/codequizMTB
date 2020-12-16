@@ -12,6 +12,8 @@
 
     // Q"how many legs does a fly have?
     // A"2,4,8,6"
+    
+   
 
     var questionOne = ("how many legs does a cat have?")
     var answersCat = ["one" , "two", "four" , "three"]
@@ -39,6 +41,18 @@
         buttonGone.style.display = 'none';
         ptext.style.display = 'none';
 
+        // var timeLeft = 60;
+        // var Timer = setInterval(function(timer){
+        // timer.preventDefault();
+
+        // if(timeLeft > 0){
+        // seconds--; 
+        // document.querySelector("#timeLoc").innerHTML = timeLeft;
+        // } else{
+        // clearInterval(Timer)
+        // }
+        
+
         question.append(questionOne);
         firstAns.append(answersCat[0]);
         secondAns.append(answersCat[1]);
@@ -62,7 +76,7 @@
     })
        
 
-        
+
 
 
 
@@ -71,13 +85,25 @@
 
 
         console.log(firstAns);
-        
+        Timer()
     
    })
-    
-    
-    
-    
+
+//TODO:timer below how to link on button and display to h3
+
+//    var timeLeft = 60;
+//    var Timer = setInterval(function(timer){
+//     timer.preventDefault();
+
+//     if(timeLeft > 0){
+//         seconds--; 
+//         document.querySelector("#timeLoc").innerHTML = timeLeft;
+//     } else{
+//         clearInterval(Timer)
+//     }
+//    }
+
+
     
  
 
@@ -117,10 +143,6 @@
   //       //counter ended, do something here
   //       //return;
   //    }
-    
-    
-    
-    
     
     
     
