@@ -13,13 +13,32 @@
     // Q"how many legs does a fly have?
     // A"2,4,8,6"
 
-    var questionOne = ["how many legs does a cat have?"]
-    var answersCat = ["one" , "two", "four" , "three"]
+    var questionOne = "how many legs does a cat have?"
+   // var answersCat = ["one" , 9"two", "four" , "three"]
+    //var question = doument.querySelector(".ulist")
+    var firstAns = document.querySelector(".listOne")
+    var secondAns = document.querySelector(".listTwo")
+    var thirdAns = document.querySelector(".listThree")
+    var fourthAns = document.querySelector(".listFour")
+
+
+
+    var buttonGone = document.querySelector("#startButton")
+    var ptext = document.querySelector("#pStart")
 
      //TODO:Create a title page with a button that begin coding quiz and timer begins counting down.
-    $(".startButton").on("click", function() {
-    $("#startButton")=""
-    console.log(button)
+    buttonGone.addEventListener("click", function(event) {
+        
+        event.preventDefault();
+        
+        buttonGone.style.display = 'none';
+        ptext.style.display = 'none';
+
+        question.display=questionOne
+        
+
+
+        console.log(buttonGone)
     
     
    })
@@ -57,8 +76,6 @@
   //       //counter ended, do something here
   //       //return;
   //    }
-    
-    
     
     
     
